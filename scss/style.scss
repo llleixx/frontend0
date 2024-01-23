@@ -1,0 +1,56 @@
+$light-gray: hsl(212, 45%, 89%);
+$grayish-blue: hsl(220, 15%, 55%);
+$dark-blue: hsl(218, 44%, 22%);
+$font-stack: Outfit, sans-serif;
+
+body {
+    background-color: #D5E1EF;
+    font-size: 15px;
+    font-family: $font-stack;
+}
+
+.box {
+    box-shadow: 0 0 15px 0 white;
+    width: 350px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.box,
+.text,
+.QR {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.QR {
+    padding: 5px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.text {
+    text-align: center;
+
+    .head {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .desc {
+        color: $grayish-blue;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .box {
+        margin-top: 50px;
+    }
+}
